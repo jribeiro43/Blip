@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func loadData() {
         WebApiManager.sharedInstance.getApiData(limit: 1, method: "tag.gettopalbums", tag: "limit") { result in
-            <#code#>
+            
         }
     }
     
