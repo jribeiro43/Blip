@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Kingfisher (4.10.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.0.1)
+  - Kingfisher (= 4.10.1)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: b3dcd7dbd0d488e1a7077cb33b00f2083e382f07
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: a9f7aed9c1f1d2d7c37eb7593a4e6283d76ec285
+
+COCOAPODS: 1.11.3

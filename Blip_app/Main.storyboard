@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" title="ViewController" id="Y6W-OH-hqX" customClass="ViewController" customModule="Blip_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Knq-D8-cMk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HomeTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="126" id="xk6-hC-NIl" customClass="HomeTableViewCell" customModule="Blip_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="126"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xk6-hC-NIl" id="1We-Uo-Tym">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-2K-UeG">
+                                                    <rect key="frame" x="20" y="10" width="384" height="106"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="last-fm-logo-svgrepo-com" translatesAutoresizingMaskIntoConstraints="NO" id="Q5z-Il-Fc4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="Q5z-Il-Fc4" secondAttribute="height" multiplier="1:1" id="pLI-1t-eIq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLD-5X-HMD">
+                                                            <rect key="frame" x="126" y="0.0" width="258" height="106"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hzP-2K-UeG" firstAttribute="leading" secondItem="1We-Uo-Tym" secondAttribute="leading" constant="20" id="HOG-37-OK6"/>
+                                                <constraint firstAttribute="trailing" secondItem="hzP-2K-UeG" secondAttribute="trailing" constant="10" id="L9n-Ry-puw"/>
+                                                <constraint firstItem="hzP-2K-UeG" firstAttribute="top" secondItem="1We-Uo-Tym" secondAttribute="top" constant="10" id="Ttg-HM-v0Y"/>
+                                                <constraint firstAttribute="bottom" secondItem="hzP-2K-UeG" secondAttribute="bottom" constant="10" id="ayp-f8-mCg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="albumImage" destination="Q5z-Il-Fc4" id="bRP-0w-9hu"/>
+                                            <outlet property="albumTitle" destination="DLD-5X-HMD" id="Jbe-r6-M4z"/>
+                                            <outlet property="stackView" destination="hzP-2K-UeG" id="pnU-f7-PCw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Knq-D8-cMk" secondAttribute="bottom" id="Ezr-SQ-w6Y"/>
+                            <constraint firstItem="Knq-D8-cMk" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="RGI-dh-T3G"/>
+                            <constraint firstItem="Knq-D8-cMk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tvT-fZ-UQj"/>
+                            <constraint firstAttribute="trailing" secondItem="Knq-D8-cMk" secondAttribute="trailing" id="uQL-ae-ERT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Knq-D8-cMk" id="Pqa-b6-7BD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="last-fm-logo-svgrepo-com" width="94" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79673FD3283E9BF400FEA958 /* AlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FD2283E9BF400FEA958 /* AlbumInfo.swift */; };
+		79673FD6283E9C1500FEA958 /* WebApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FD5283E9C1500FEA958 /* WebApiManager.swift */; };
+		79673FD9283E9C4700FEA958 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FD8283E9C4700FEA958 /* HomeTableViewCell.swift */; };
+		79673FDB283E9C8300FEA958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79673FDA283E9C8300FEA958 /* Main.storyboard */; };
+		79673FDD283E9CC700FEA958 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79673FDC283E9CC700FEA958 /* Launch Screen.storyboard */; };
+		79BF5E8A283E215D003D7DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5E89283E215D003D7DD6 /* AppDelegate.swift */; };
+		79BF5E8C283E215D003D7DD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5E8B283E215D003D7DD6 /* SceneDelegate.swift */; };
+		79BF5E8E283E215D003D7DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5E8D283E215D003D7DD6 /* ViewController.swift */; };
+		79BF5E93283E2162003D7DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BF5E92283E2162003D7DD6 /* Assets.xcassets */; };
+		79BF5EA1283E2162003D7DD6 /* Blip_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5EA0283E2162003D7DD6 /* Blip_appTests.swift */; };
+		79BF5EAB283E2162003D7DD6 /* Blip_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5EAA283E2162003D7DD6 /* Blip_appUITests.swift */; };
+		79BF5EAD283E2162003D7DD6 /* Blip_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5EAC283E2162003D7DD6 /* Blip_appUITestsLaunchTests.swift */; };
+		F482F80A1A7B0F0B95EEE95A /* Pods_Blip_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0199545B3175641CBBF092E5 /* Pods_Blip_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79BF5E9D283E2162003D7DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79BF5E7E283E215D003D7DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79BF5E85283E215D003D7DD6;
+			remoteInfo = Blip_app;
+		};
+		79BF5EA7283E2162003D7DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79BF5E7E283E215D003D7DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79BF5E85283E215D003D7DD6;
+			remoteInfo = Blip_app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0199545B3175641CBBF092E5 /* Pods_Blip_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blip_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79673FD2283E9BF400FEA958 /* AlbumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfo.swift; sourceTree = "<group>"; };
+		79673FD5283E9C1500FEA958 /* WebApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApiManager.swift; sourceTree = "<group>"; };
+		79673FD8283E9C4700FEA958 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		79673FDA283E9C8300FEA958 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		79673FDC283E9CC700FEA958 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		79BF5E86283E215D003D7DD6 /* Blip_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blip_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BF5E89283E215D003D7DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79BF5E8B283E215D003D7DD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79BF5E8D283E215D003D7DD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79BF5E92283E2162003D7DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79BF5E97283E2162003D7DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79BF5E9C283E2162003D7DD6 /* Blip_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blip_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BF5EA0283E2162003D7DD6 /* Blip_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blip_appTests.swift; sourceTree = "<group>"; };
+		79BF5EA6283E2162003D7DD6 /* Blip_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blip_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79BF5EAA283E2162003D7DD6 /* Blip_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blip_appUITests.swift; sourceTree = "<group>"; };
+		79BF5EAC283E2162003D7DD6 /* Blip_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blip_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E12035DABFDD2ABC32C140BE /* Pods-Blip_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip_app.release.xcconfig"; path = "Target Support Files/Pods-Blip_app/Pods-Blip_app.release.xcconfig"; sourceTree = "<group>"; };
+		F8F996BD449C27F75DD8022A /* Pods-Blip_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blip_app.debug.xcconfig"; path = "Target Support Files/Pods-Blip_app/Pods-Blip_app.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79BF5E83283E215D003D7DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F482F80A1A7B0F0B95EEE95A /* Pods_Blip_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BF5E99283E2162003D7DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BF5EA3283E2162003D7DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79673FD1283E9BD400FEA958 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				79673FD2283E9BF400FEA958 /* AlbumInfo.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		79673FD4283E9BFD00FEA958 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				79673FD5283E9C1500FEA958 /* WebApiManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		79673FD7283E9C1E00FEA958 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79673FD8283E9C4700FEA958 /* HomeTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		79BF5E7D283E215D003D7DD6 = {
+			isa = PBXGroup;
+			children = (
+				79BF5E88283E215D003D7DD6 /* Blip_app */,
+				79BF5E9F283E2162003D7DD6 /* Blip_appTests */,
+				79BF5EA9283E2162003D7DD6 /* Blip_appUITests */,
+				79BF5E87283E215D003D7DD6 /* Products */,
+				B6C698563E2A7E05AEFDEC4D /* Pods */,
+				EE70BE70C652438DC84794A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79BF5E87283E215D003D7DD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79BF5E86283E215D003D7DD6 /* Blip_app.app */,
+				79BF5E9C283E2162003D7DD6 /* Blip_appTests.xctest */,
+				79BF5EA6283E2162003D7DD6 /* Blip_appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79BF5E88283E215D003D7DD6 /* Blip_app */ = {
+			isa = PBXGroup;
+			children = (
+				79673FD7283E9C1E00FEA958 /* Cells */,
+				79673FD4283E9BFD00FEA958 /* Managers */,
+				79673FD1283E9BD400FEA958 /* Objects */,
+				79BF5E89283E215D003D7DD6 /* AppDelegate.swift */,
+				79BF5E8B283E215D003D7DD6 /* SceneDelegate.swift */,
+				79BF5E8D283E215D003D7DD6 /* ViewController.swift */,
+				79673FDA283E9C8300FEA958 /* Main.storyboard */,
+				79BF5E92283E2162003D7DD6 /* Assets.xcassets */,
+				79673FDC283E9CC700FEA958 /* Launch Screen.storyboard */,
+				79BF5E97283E2162003D7DD6 /* Info.plist */,
+			);
+			path = Blip_app;
+			sourceTree = "<group>";
+		};
+		79BF5E9F283E2162003D7DD6 /* Blip_appTests */ = {
+			isa = PBXGroup;
+			children = (
+				79BF5EA0283E2162003D7DD6 /* Blip_appTests.swift */,
+			);
+			path = Blip_appTests;
+			sourceTree = "<group>";
+		};
+		79BF5EA9283E2162003D7DD6 /* Blip_appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79BF5EAA283E2162003D7DD6 /* Blip_appUITests.swift */,
+				79BF5EAC283E2162003D7DD6 /* Blip_appUITestsLaunchTests.swift */,
+			);
+			path = Blip_appUITests;
+			sourceTree = "<group>";
+		};
+		B6C698563E2A7E05AEFDEC4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F996BD449C27F75DD8022A /* Pods-Blip_app.debug.xcconfig */,
+				E12035DABFDD2ABC32C140BE /* Pods-Blip_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE70BE70C652438DC84794A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0199545B3175641CBBF092E5 /* Pods_Blip_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79BF5E85283E215D003D7DD6 /* Blip_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BF5EB0283E2162003D7DD6 /* Build configuration list for PBXNativeTarget "Blip_app" */;
+			buildPhases = (
+				E707A32AA5759F743176A641 /* [CP] Check Pods Manifest.lock */,
+				79BF5E82283E215D003D7DD6 /* Sources */,
+				79BF5E83283E215D003D7DD6 /* Frameworks */,
+				79BF5E84283E215D003D7DD6 /* Resources */,
+				29151A9294702D773274D0E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blip_app;
+			productName = Blip_app;
+			productReference = 79BF5E86283E215D003D7DD6 /* Blip_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79BF5E9B283E2162003D7DD6 /* Blip_appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BF5EB3283E2162003D7DD6 /* Build configuration list for PBXNativeTarget "Blip_appTests" */;
+			buildPhases = (
+				79BF5E98283E2162003D7DD6 /* Sources */,
+				79BF5E99283E2162003D7DD6 /* Frameworks */,
+				79BF5E9A283E2162003D7DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79BF5E9E283E2162003D7DD6 /* PBXTargetDependency */,
+			);
+			name = Blip_appTests;
+			productName = Blip_appTests;
+			productReference = 79BF5E9C283E2162003D7DD6 /* Blip_appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79BF5EA5283E2162003D7DD6 /* Blip_appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79BF5EB6283E2162003D7DD6 /* Build configuration list for PBXNativeTarget "Blip_appUITests" */;
+			buildPhases = (
+				79BF5EA2283E2162003D7DD6 /* Sources */,
+				79BF5EA3283E2162003D7DD6 /* Frameworks */,
+				79BF5EA4283E2162003D7DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79BF5EA8283E2162003D7DD6 /* PBXTargetDependency */,
+			);
+			name = Blip_appUITests;
+			productName = Blip_appUITests;
+			productReference = 79BF5EA6283E2162003D7DD6 /* Blip_appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79BF5E7E283E215D003D7DD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					79BF5E85283E215D003D7DD6 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					79BF5E9B283E2162003D7DD6 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 79BF5E85283E215D003D7DD6;
+					};
+					79BF5EA5283E2162003D7DD6 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 79BF5E85283E215D003D7DD6;
+					};
+				};
+			};
+			buildConfigurationList = 79BF5E81283E215D003D7DD6 /* Build configuration list for PBXProject "Blip_app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79BF5E7D283E215D003D7DD6;
+			productRefGroup = 79BF5E87283E215D003D7DD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79BF5E85283E215D003D7DD6 /* Blip_app */,
+				79BF5E9B283E2162003D7DD6 /* Blip_appTests */,
+				79BF5EA5283E2162003D7DD6 /* Blip_appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79BF5E84283E215D003D7DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79673FDD283E9CC700FEA958 /* Launch Screen.storyboard in Resources */,
+				79673FDB283E9C8300FEA958 /* Main.storyboard in Resources */,
+				79BF5E93283E2162003D7DD6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BF5E9A283E2162003D7DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BF5EA4283E2162003D7DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29151A9294702D773274D0E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blip_app/Pods-Blip_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blip_app/Pods-Blip_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blip_app/Pods-Blip_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E707A32AA5759F743176A641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blip_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79BF5E82283E215D003D7DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79673FD9283E9C4700FEA958 /* HomeTableViewCell.swift in Sources */,
+				79BF5E8E283E215D003D7DD6 /* ViewController.swift in Sources */,
+				79673FD3283E9BF400FEA958 /* AlbumInfo.swift in Sources */,
+				79BF5E8A283E215D003D7DD6 /* AppDelegate.swift in Sources */,
+				79673FD6283E9C1500FEA958 /* WebApiManager.swift in Sources */,
+				79BF5E8C283E215D003D7DD6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BF5E98283E2162003D7DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BF5EA1283E2162003D7DD6 /* Blip_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79BF5EA2283E2162003D7DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BF5EAD283E2162003D7DD6 /* Blip_appUITestsLaunchTests.swift in Sources */,
+				79BF5EAB283E2162003D7DD6 /* Blip_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79BF5E9E283E2162003D7DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79BF5E85283E215D003D7DD6 /* Blip_app */;
+			targetProxy = 79BF5E9D283E2162003D7DD6 /* PBXContainerItemProxy */;
+		};
+		79BF5EA8283E2162003D7DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79BF5E85283E215D003D7DD6 /* Blip_app */;
+			targetProxy = 79BF5EA7283E2162003D7DD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79BF5EAE283E2162003D7DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79BF5EAF283E2162003D7DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79BF5EB1283E2162003D7DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F996BD449C27F75DD8022A /* Pods-Blip_app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLB3453RG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Blip_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Last FM";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Blip-JR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79BF5EB2283E2162003D7DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12035DABFDD2ABC32C140BE /* Pods-Blip_app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLB3453RG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Blip_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Last FM";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Blip-JR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79BF5EB4283E2162003D7DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLF668YC22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JR.Blip-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blip_app.app/Blip_app";
+			};
+			name = Debug;
+		};
+		79BF5EB5283E2162003D7DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLF668YC22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JR.Blip-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blip_app.app/Blip_app";
+			};
+			name = Release;
+		};
+		79BF5EB7283E2162003D7DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLF668YC22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JR.Blip-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blip_app;
+			};
+			name = Debug;
+		};
+		79BF5EB8283E2162003D7DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLF668YC22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "JR.Blip-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Blip_app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79BF5E81283E215D003D7DD6 /* Build configuration list for PBXProject "Blip_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BF5EAE283E2162003D7DD6 /* Debug */,
+				79BF5EAF283E2162003D7DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79BF5EB0283E2162003D7DD6 /* Build configuration list for PBXNativeTarget "Blip_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BF5EB1283E2162003D7DD6 /* Debug */,
+				79BF5EB2283E2162003D7DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79BF5EB3283E2162003D7DD6 /* Build configuration list for PBXNativeTarget "Blip_appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BF5EB4283E2162003D7DD6 /* Debug */,
+				79BF5EB5283E2162003D7DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79BF5EB6283E2162003D7DD6 /* Build configuration list for PBXNativeTarget "Blip_appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79BF5EB7283E2162003D7DD6 /* Debug */,
+				79BF5EB8283E2162003D7DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79BF5E7E283E215D003D7DD6 /* Project object */;
+}
