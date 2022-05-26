@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Foundation
 
 class WebApiManager: NSObject {
     static let sharedInstance = WebApiManager()
@@ -21,10 +22,10 @@ class WebApiManager: NSObject {
     
     // MARK: Api Call Funcs
     
-    func getApiData(limit: Int, method: String, tag: String, onCompletion: @escaping (AlbumInfo) -> Void) {
-        let route = baseURL + "/shopping-carts/guest"
+    func getApiData(limit: Int, method: String, tag: String, onCompletion: @escaping (GeneralAlbum) -> Void) {
+        let route = baseURL
        
-        let headers: [String: String] = ["":""]
+        let headers = HTTPHeaders()
         
         var parameters: [String: Any] = ["":""]
         parameters = [
@@ -35,9 +36,45 @@ class WebApiManager: NSObject {
             "limit": limit
         ]
         
-        Alamofire.request(route, method: Alamofire.HTTPMethod.post , parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        AF.request(route, method: Alamofire.HTTPMethod.get , parameters: parameters, encoding: URLEncoding.default, headers: headers)
             .responseJSON { response in
-                print(response)
+                
+                var result = GeneralAlbum(json: ["":""])
+                
+                switch response.result {
+                case .success(let value):
+                    if let json = value as? [String: Any] {
+                        result = GeneralAlbum(json: JSON(json))
+                    }
+                    
+                   
+                case .failure(let error):
+                    print(error)
+                }
+                
+                DispatchQueue.main.async(execute: {
+                    onCompletion(result)
+                })
+        }
+        
+    }
+    
+    func getAlbumData(artist: String, method: String, album: String, onCompletion: @escaping (AlbumInfo) -> Void) {
+        let route = baseURL
+       
+        let headers = HTTPHeaders()
+        
+        var parameters: [String: Any] = ["":""]
+        parameters = [
+            "api_key": "340f294fae3384308e5cc06039786807",
+            "format": "json",
+            "artist": artist,
+            "method": method,
+            "album": album
+        ]
+        
+        AF.request(route, method: Alamofire.HTTPMethod.get , parameters: parameters, encoding: URLEncoding.default, headers: headers)
+            .responseJSON { response in
                 
                 var result = AlbumInfo(json: ["":""])
                 

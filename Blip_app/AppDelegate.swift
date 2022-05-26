@@ -14,6 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // get current number of times app has been launched
+        let currentCount = UserDefaults.standard.integer(forKey: "asd")
+
+        // increment received number by one
+        UserDefaults.standard.set(currentCount+1, forKey:"asd")
+        
+        
         return true
     }
 

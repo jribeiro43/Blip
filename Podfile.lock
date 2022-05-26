@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.0.1)
+  - Alamofire (5.6.1)
   - Kingfisher (4.10.1)
   - SwiftyJSON (5.0.1)
 
@@ -23,10 +23,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
-  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: dba0e0277762bd37e9fb92b0c1c7400bbe9dfdf3
+PODFILE CHECKSUM: f55b5711b82653dc013f4fb1ed811256e71b36dc
 
 COCOAPODS: 1.11.3

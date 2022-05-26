@@ -8,5 +8,6 @@ target 'Blip_app' do
         pod 'Kingfisher', '4.10.1'
         pod 'Alamofire'
 
+
 end
 
