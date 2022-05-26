@@ -16,11 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // get current number of times app has been launched
-        let currentCount = UserDefaults.standard.integer(forKey: "asd")
+        let currentCount = UserDefaults.standard.integer(forKey: "appView")
 
         // increment received number by one
-        UserDefaults.standard.set(currentCount+1, forKey:"asd")
+        UserDefaults.standard.set(currentCount+1, forKey:"appView")
         
+        // start check internet connection
+        NetworkManager.shared.startMonitoring()
         
         return true
     }

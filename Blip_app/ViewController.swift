@@ -22,22 +22,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let currentCount = UserDefaults.standard.integer(forKey: "asd")
-        
-        if currentCount%10 == 0 {
-            SKStoreReviewController.requestReview()
+        if NetworkManager.shared.isConnected {
+            let currentCount = UserDefaults.standard.integer(forKey: "appView")
+            
+            if currentCount%10 == 0 {
+                SKStoreReviewController.requestReview()
+            }
+            
+            self.tableView.delegate = self
+            self.tableView.dataSource = self
+            
+            self.view.isUserInteractionEnabled = false
+            self.tableView.isHidden = true
+            
+            self.loadData()
+            
+            self.view.isUserInteractionEnabled = true
+            self.tableView.isHidden = false
+            
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Without internet connection", preferredStyle: UIAlertController.Style.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action:UIAlertAction!) -> Void in
+                UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+                exit(0)
+                
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
         }
         
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
 
-        self.view.isUserInteractionEnabled = false
-        self.tableView.isHidden = true
-        
-        self.loadData()
-        
-        self.view.isUserInteractionEnabled = true
-        self.tableView.isHidden = false
     }
     
     func loadData() {

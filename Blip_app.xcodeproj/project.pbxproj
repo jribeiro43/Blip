@@ -17,6 +17,7 @@
 		79673FED283F872A00FEA958 /* ImageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FEC283F872A00FEA958 /* ImageDetails.swift */; };
 		79673FF2283F97C000FEA958 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FF1283F97C000FEA958 /* AlbumViewController.swift */; };
 		79673FF4283F9B1100FEA958 /* AlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FF3283F9B1100FEA958 /* AlbumInfo.swift */; };
+		79673FF7283FC9A500FEA958 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79673FF6283FC9A500FEA958 /* NetworkManager.swift */; };
 		79BF5E8A283E215D003D7DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5E89283E215D003D7DD6 /* AppDelegate.swift */; };
 		79BF5E8C283E215D003D7DD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5E8B283E215D003D7DD6 /* SceneDelegate.swift */; };
 		79BF5E8E283E215D003D7DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF5E8D283E215D003D7DD6 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		79673FEC283F872A00FEA958 /* ImageDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetails.swift; sourceTree = "<group>"; };
 		79673FF1283F97C000FEA958 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		79673FF3283F9B1100FEA958 /* AlbumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfo.swift; sourceTree = "<group>"; };
+		79673FF6283FC9A500FEA958 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		79BF5E86283E215D003D7DD6 /* Blip_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blip_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BF5E89283E215D003D7DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79BF5E8B283E215D003D7DD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				79673FD5283E9C1500FEA958 /* WebApiManager.swift */,
+				79673FF6283FC9A500FEA958 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79673FF7283FC9A500FEA958 /* NetworkManager.swift in Sources */,
 				79673FD9283E9C4700FEA958 /* HomeTableViewCell.swift in Sources */,
 				79BF5E8E283E215D003D7DD6 /* ViewController.swift in Sources */,
 				79673FF4283F9B1100FEA958 /* AlbumInfo.swift in Sources */,
