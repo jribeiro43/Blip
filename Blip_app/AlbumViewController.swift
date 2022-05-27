@@ -24,7 +24,6 @@ class AlbumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.isUserInteractionEnabled = false
-        self.stackView.isHidden = true
         
         self.loadData()
         
