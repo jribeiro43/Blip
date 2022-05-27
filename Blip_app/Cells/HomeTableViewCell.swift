@@ -9,6 +9,7 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewCell: UIView!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var albumImage: UIImageView!
     @IBOutlet weak var albumTitle: UILabel!

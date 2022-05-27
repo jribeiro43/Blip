@@ -51,8 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             self.present(alert, animated: true, completion: nil)
         }
-        
-
+    
     }
     
     func loadData() {
@@ -112,6 +111,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.albumImage.image = cell.albumImage.image?.withRenderingMode(.alwaysTemplate)
         cell.albumImage.tintColor = UIColor.black
         
+        cell.viewCell.layer.cornerRadius = 8
+        cell.viewCell.layer.shadowColor = Color.label.cgColor
+        cell.viewCell.layer.shadowOpacity = 1
+        cell.viewCell.layer.shadowOffset = .zero
+        cell.viewCell.layer.shadowRadius = 3
+        
         if self.traitCollection.userInterfaceStyle == .dark {
             cell.albumImage.tintColor = UIColor.white
 
@@ -153,6 +158,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AlbumViewController") as! AlbumViewController
         nextViewController.artist = self.albums.albums[0].albumDetails[indexPath.row].artist
         nextViewController.album = self.albums.albums[0].albumDetails[indexPath.row].name
+        for i in 0..<self.albums.albums[0].albumDetails[indexPath.row].imageDetails.count {
+            let size = self.albums.albums[0].albumDetails[indexPath.row].imageDetails[i].size
+            
+            if size == "extralarge" {
+                nextViewController.image = self.albums.albums[0].albumDetails[indexPath.row].imageDetails[i].url
+            }
+        }
+
         self.navigationController?.pushViewController(nextViewController , animated: true)
         
     }

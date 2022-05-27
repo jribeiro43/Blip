@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AlbumViewController: UIViewController {
     
+    var image: String = ""
     var album: String = ""
     var artist: String = ""
 
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var albumImage: UIImageView!
     @IBOutlet weak var albumName: UILabel!
     @IBOutlet weak var artistName: UILabel!
     @IBOutlet weak var tracks: UILabel!
@@ -27,7 +29,6 @@ class AlbumViewController: UIViewController {
         self.loadData()
         
         self.view.isUserInteractionEnabled = true
-        self.stackView.isHidden = false
     }
     
     func loadData() {
@@ -60,8 +61,9 @@ class AlbumViewController: UIViewController {
     func loadInfoData(albumName: String, artistName: String, handler: @escaping () -> Void) {
         WebApiManager.sharedInstance.getAlbumData(artist: artistName, method: "album.getinfo", album: albumName) { albumData in
             
-            self.albumName.text = "Album: " + albumData.albumName
-            self.artistName.text = "Artist: " + albumData.artistName
+            self.albumImage.kf.setImage(with: URL(string: self.image))
+            self.albumName.text = albumData.albumName
+            self.artistName.text = albumData.artistName
             self.listeners.text = "Total Listeners: " + albumData.listeners
             self.tracks.text = "Album Tracks: " + "\(albumData.tracksCount)"
             
